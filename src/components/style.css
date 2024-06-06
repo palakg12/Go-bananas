@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #050505;
+    background: -webkit-linear-gradient(to right, #952e2e, #543a1f);
+    background: linear-gradient(to right, #000000, #000000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+.heading h1 {
+    color: rgb(153, 116, 116);
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding-top: 2rem;
+    text-align: center;
+    text-shadow: 3px 6px rgba(50, 50, 70, 0.7);
+}
+.heading h4 {
+    color: white;
+    text-align: center;
+}
+.searchBox {
+    text-align: center;
+    margin: 3rem;
+    border: 8px yellow;
+}
+.search-bar {
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    /* padding: 0.3rem 1rem; */
+}
+.notSearch {
+    font-size: 35px;
+    color: white;
+    font-weight: 900;
+}
+.container {
+    background-color: rgb(0, 0, 0);
+    width: 90%;
+    margin: 4 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+h2{
+    color: aliceblue;
+    padding-bottom: 30px;
+    margin-left: 80px;
+}
+.card {
+    width: 400px;
+    height: 400px;
+    margin: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: auto;
+    position: relative;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+
+    /* height: 50px;
+    width: 50px; */
+}
+.card .info {
+    position:fixed;
+    color: white;
+    text-align: center;
+}
+.card .info h2 {
+    font-weight: 900;
+    margin-top: 15px;
+}
+.card .info p {
+    margin: 0;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+.card:before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(222, 225, 213, 0.7), rgba(194, 196, 187, 0.9));
+    /* transition: 0.2s all; */
+}
+.card:hover:before {
+    height: 50%;
+}
+.card:hover {
+    background: linear-gradient(to bottom, rgba(157, 158, 153, 0.7), rgba(68, 69, 66, 0.9));
+}
+.card .recipe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: justify;
+    padding: 0.5rem 1rem;
+    display: none;
+    transition: 0.3s all;
+}
+.card:hover .recipe {
+    display: block;
+}
+.recipe h2 {
+    margin-bottom: 10px;
+}
+.recipe img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    height: 250px;
+    /* width: 100%; */
+}
+.recipe p {
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.recipe a {
+    display: block;
+    text-align: center;
+}
+
+.meal-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.mealimg{
+    height: 600px;
+    width: 600px;
+}
+
+.meal-info {
+    background: rgb(249, 249, 249);
+    padding: 40px 20px 20px; /* Adjust padding to provide space at the top */
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    position: fixed;
+    text-align: center;
+    overflow: auto; /* Add overflow auto to handle content */
+    max-height: 90%; /* Adjust to ensure it doesn't exceed the viewport height */
+}
+
+.meal-info h1 {
+    margin-bottom: 20px;
+    padding-top: 20px; /* Ensure space at the top */
+    padding-bottom: 10px;
+}
+
+.meal-info img {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+}
+
+.meal-info ul {
+    list-style:disc;
+    padding: 0;
+    text-align: left;
+}
+
+.meal-info ul li {
+    margin-bottom: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

@@ -7,10 +7,10 @@ const MealItem = ({ data, onClick }) => {
   return (
     // A div element with a class of "card" that responds to click events
     <div className="card" onClick={onClick}>
-      // An img element displaying the meal thumbnail with an alt text
+      
       <img src={data.strMealThumb} alt={data.strMeal} />
       
-      // A paragraph element displaying a truncated version of the meal instructions
+      
       <p>{data.strInstructions.substring(0, 100)}...</p>
      
     </div>

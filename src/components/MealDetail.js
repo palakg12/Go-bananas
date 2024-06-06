@@ -21,15 +21,15 @@ const MealDetail = ({ meal, onClose }) => {
   return (
     <div className="meal-popup">
       <div className="meal-info">
-        // A button to close the meal detail popup
+  
         <button className="close-btn" onClick={onClose}>Close</button>
-        // Displaying the meal name
+      
         <h1>{meal.strMeal}</h1>
-        // Displaying the meal thumbnail
+      
         <img src={meal.strMealThumb} alt={meal.strMeal} className="mealimg"/>
-        // Displaying the meal instructions
+       
         <p>{meal.strInstructions}</p>
-        // Displaying the ingredients
+      
         <h3 >Ingredients:</h3>
         <ul>
           {ingredients.map((ing, index) => (

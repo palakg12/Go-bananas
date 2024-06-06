@@ -207,3 +207,61 @@ h3{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .search-bar {
+        width: 300px;
+        height: 35px;
+        border-radius: 15px;
+    }
+    .card {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+    }
+    .mealimg {
+        height: 400px;
+        width: 100%;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .searchBox {
+        margin: 1.5rem;
+    }
+    .heading h1 {
+        font-size: 36px;
+        padding-top: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-bar {
+        width: 200px;
+        height: 30px;
+        border-radius: 10px;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+        margin: 1rem 0;
+        overflow: hidden;
+    }
+    .mealimg {
+        height: 300px;
+        width: 100%;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .searchBox {
+        margin: 1rem;
+    }
+    .heading h1 {
+        font-size: 28px;
+        padding-top: 1rem;
+    }
+}
